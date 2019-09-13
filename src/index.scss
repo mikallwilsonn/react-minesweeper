@@ -1,0 +1,117 @@
+
+@import url( 'https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap' );
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 20px;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.clear {
+  clear: both;
+  content: "";
+}
+
+.game {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #CCC;
+
+  h1.title {
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+
+  .game-info {
+    margin-bottom: 20px;
+    background: #D43130;
+    padding: 7px;
+    text-align: center;
+    color: #fff;
+    min-height: 100px;
+    border-radius: 5px;
+    width: 100%;
+
+    .info {
+      display: block;
+      margin-top: 15px;
+    }
+  }
+
+  .board {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cells {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  .cell {
+    background: #7b7b7b;
+    border: 1px solid #fff;
+    float: left;
+    line-height: 45px;
+    height: 90px;
+    text-align: center;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.2s;
+    vertical-align: middle;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: #7e7e7e;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .hidden {
+    background: #2e2829;
+  }
+
+  .is-flag,
+  .is-mine {
+    color: #fc543c;
+  }
+}
